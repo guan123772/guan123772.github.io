@@ -9,7 +9,7 @@
     
     <title>
         
-            TOC |
+            Hexo博客怎么添加目录 |
         
         Guan - Blog
     </title>
@@ -159,7 +159,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">TOC</span>
+            <span class="title-hover-animation">Hexo博客怎么添加目录</span>
         </div>
 
         
@@ -178,13 +178,32 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2022-08-17 14:32:46</span>
-        <span class="mobile">2022-08-17 14:32</span>
+        <span class="pc">2022-08-13 15:25:03</span>
+        <span class="mobile">2022-08-13 15:25</span>
     </span>
     
     
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9B%AE%E5%BD%95/">Hexo博客不显示目录</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%9B%AE%E5%BD%95/">博客添加目录</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
 
     
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>152 Words</span>
+        </span>
     
     
         <span class="article-min2read article-meta-item">
@@ -200,18 +219,38 @@
         
 
         <div class="article-content markdown-body">
-            
+            <h3><span id="hexo博客给文章添加目录">Hexo博客给文章添加目录</span></h3>
+<h4><span id="没有配置前的目录显示">没有配置前的目录显示</span></h4>
+<p><img src="/2022/08/13/TOC/p1.png" alt></p>
+<h4><span id="配置后的目录显示">配置后的目录显示</span></h4>
+<p><img src="/2022/08/13/TOC/p2.png" alt></p>
+<h3><span id="详细教程">详细教程</span></h3>
+<h4><span id="一-安装插件">一、安装插件</span></h4>
+<p>在根目录下打开GitBush输入以下命令：</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">npm install hexo-toc <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
+<h4><span id="二-配置根目录下的configyml文件">二、配置根目录下的.config.yml文件</span></h4>
+<p>若没有配置信息，自行添加</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">toc:</span><br><span class="hljs-symbol">  maxdepth:</span> <span class="hljs-number">3</span><br></code></pre></td></tr></table></figure>
+<h4><span id="三-添加目录">三、添加目录</span></h4>
+<p>​		在makedown文件中插入-内容目录就会自动生成目录，然后在该目录上下均添加一行代码，下面一行要和正文之间有空行！！！</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-comment">&lt;!-- toc --&gt;</span><br></code></pre></td></tr></table></figure>
+<p>示例：</p>
+<p><img src="/2022/08/13/TOC/p3.png" alt></p>
+<h4><span id="四-编译上传">四、编译上传</span></h4>
+<p>三件套：</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo c</span><br><span class="hljs-attribute">hexo g</span><br><span class="hljs-attribute">hexo d</span><br></code></pre></td></tr></table></figure>
+
         </div>
 
         
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>Post title：TOC</li>
+        <li>Post title：Hexo博客怎么添加目录</li>
         <li>Post author：Gentleman Guan</li>
-        <li>Create time：2022-08-17 14:32:46</li>
+        <li>Create time：2022-08-13 15:25:03</li>
         <li>
-            Post link：https://keep.xpoet.cn/2022/08/17/TOC/
+            Post link：https://keep.xpoet.cn/2022/08/13/TOC/
         </li>
         <li>
             Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
@@ -223,25 +262,37 @@
         
 
         
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9B%AE%E5%BD%95/">#Hexo博客不显示目录</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%9B%AE%E5%BD%95/">#博客添加目录</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
 
         
             <div class="article-nav">
                 
-                
-                    <div class="article-next">
-                        <a class="next"
-                           rel="next"
-                           href="/2022/08/17/%E9%AB%98%E6%B8%85%E5%A3%81%E7%BA%B8/"
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/08/13/Picture1/"
                         >
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">图片测试</span>
-                                <span class="post-nav-item">Next posts</span>
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
                             </span>
-                            <span class="right arrow-icon flex-center">
-                              <i class="fas fa-chevron-right"></i>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Hexo博客怎么插入图片111</span>
+                                <span class="post-nav-item">Prev posts</span>
                             </span>
                         </a>
                     </div>
+                
                 
             </div>
         
@@ -428,7 +479,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">Hexo博客给文章添加目录</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.1.</span> <span class="nav-text">没有配置前的目录显示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.</span> <span class="nav-text">配置后的目录显示</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">详细教程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">2.1.</span> <span class="nav-text">一、安装插件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">2.2.</span> <span class="nav-text">二、配置根目录下的.config.yml文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">2.3.</span> <span class="nav-text">三、添加目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">2.4.</span> <span class="nav-text">四、编译上传</span></a></li></ol></li></ol>
     </div>
 </div>
         </aside>
