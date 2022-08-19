@@ -228,9 +228,9 @@
             <!-- TOC -->
 <p>[TOC]</p>
 <!-- TOC -->
-<h3><span id="hexo博客怎么插入视频或者音频">Hexo博客怎么插入视频或者音频</span></h3>
-<h4><span id="hexo插入本地视频">Hexo插入本地视频</span></h4>
-<h5><span id="示例自制智能桌面垃圾桶-ω"><strong>示例（自制智能桌面垃圾桶 ⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ ）</strong></span></h5>
+<h2><span id="hexo博客怎么插入视频或者音频">Hexo博客怎么插入视频或者音频</span></h2>
+<h3><span id="hexo插入本地视频">Hexo插入本地视频</span></h3>
+<h4><span id="示例自制智能桌面垃圾桶-ω">示例（自制智能桌面垃圾桶 ⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ ）</span></h4>
 <p>PS：由于要访问Github仓库所以网络不好的话可能加载不出来</p>
 <div style="position: relative; width: 100%; height: 500; padding-bottom: 50%;">
 <iframe src="music-mv/mv.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe>
@@ -239,32 +239,32 @@
 <p>不会出现视频很大现象，上下高度可以调节 padding-bottom的值，值越大上下黑边就越大( * ^▽^ * )）</p>
 <figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs abnf">&lt;div style<span class="hljs-operator">=</span><span class="hljs-string">&quot;position: relative; width: 100%; height: 500; padding-bottom: 50%;&quot;</span>&gt;<br>&lt;iframe  src<span class="hljs-operator">=</span><span class="hljs-string">&quot;music-mv/mv.mp4&quot;</span> scrolling<span class="hljs-operator">=</span><span class="hljs-string">&quot;no&quot;</span> border<span class="hljs-operator">=</span><span class="hljs-string">&quot;0&quot;</span> frameborder<span class="hljs-operator">=</span><span class="hljs-string">&quot;no&quot;</span> framespacing<span class="hljs-operator">=</span><span class="hljs-string">&quot;0&quot;</span> allowfullscreen<span class="hljs-operator">=</span><span class="hljs-string">&quot;true&quot;</span> style<span class="hljs-operator">=</span><span class="hljs-string">&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;</span>&gt;&lt;/iframe&gt;<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
 <h4><span id="详细教程">详细教程</span></h4>
-<h5><span id="一-新建md文件">一、新建md文件</span></h5>
+<h4><span id="一-新建md文件">一、新建md文件</span></h4>
 <p>在根目录下右键打开Gitbush输入以下命令：</p>
 <figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs excel">hexo <span class="hljs-built_in">n</span> <span class="hljs-string">&quot;文章名字&quot;</span><br></code></pre></td></tr></table></figure>
-<h5><span id="二-添加视频文件">二、添加视频文件</span></h5>
+<h4><span id="二-添加视频文件">二、添加视频文件</span></h4>
 <p>首先找到&quot;public/2022/当前月份/当前日期/文章名字&quot;文件夹，新建一个与文章名字同名的文件夹</p>
 <p>将你要插入的视频文件放在&quot;public/2022/当前月份/当前日期/文章名字/文章名字&quot;文件夹下即可（命名随意）</p>
 <p><img src="/2022/08/18/music-mv/p3.png" alt></p>
-<h5><span id="三-编辑md文档">三、编辑md文档</span></h5>
+<h4><span id="三-编辑md文档">三、编辑md文档</span></h4>
 <p>在md文档中添加以下代码，其中src改为自己的视频路径，尺寸可调width，height值，可自行调整大小</p>
 <p>虽然加上这段代码之后在当前文档上并未看到视频出现，但是在编译成功之后输入hexo s，博客就可以加载出来你所添加的视频，来进行测试调整</p>
 <figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs abnf">&lt;div style<span class="hljs-operator">=</span><span class="hljs-string">&quot;position: relative; width: 100%; height: 500; padding-bottom: 50%;&quot;</span>&gt;<br>&lt;iframe  src<span class="hljs-operator">=</span><span class="hljs-string">&quot;music-mv/mv.mp4&quot;</span> scrolling<span class="hljs-operator">=</span><span class="hljs-string">&quot;no&quot;</span> border<span class="hljs-operator">=</span><span class="hljs-string">&quot;0&quot;</span> frameborder<span class="hljs-operator">=</span><span class="hljs-string">&quot;no&quot;</span> framespacing<span class="hljs-operator">=</span><span class="hljs-string">&quot;0&quot;</span> allowfullscreen<span class="hljs-operator">=</span><span class="hljs-string">&quot;true&quot;</span> style<span class="hljs-operator">=</span><span class="hljs-string">&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;</span>&gt;&lt;/iframe&gt;<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
-<h5><span id="四-编译上传">四、编译上传</span></h5>
+<h4><span id="四-编译上传">四、编译上传</span></h4>
 <p>四件套</p>
 <figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs llvm">hexo <span class="hljs-keyword">c</span><br>hexo g<br>hexo d<br>hexo s（若想快速测试可加这一行代码）<br></code></pre></td></tr></table></figure>
-<h4><span id="hexo插入网上视频">Hexo插入网上视频</span></h4>
-<h5><span id="示例bilibili视频还是自制智能桌面垃圾桶-ω">示例BiliBili视频（还是自制智能桌面垃圾桶 ⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ ）</span></h5>
+<h3><span id="hexo插入网上视频">Hexo插入网上视频</span></h3>
+<h4><span id="示例bilibili视频还是自制智能桌面垃圾桶-ω">示例BiliBili视频（还是自制智能桌面垃圾桶 ⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ ）</span></h4>
 <div style="position: relative; width: 100%; height: 500; padding-bottom: 60%;">
 <iframe width="100%" height="100%" src="//player.bilibili.com/player.html?aid=687137888&bvid=BV1BU4y1r7VN&cid=807595774&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe>
 </div>
-<h5><span id="详细教程">详细教程</span></h5>
-<h5><span id="一-获得嵌入代码">一、获得嵌入代码</span></h5>
+<h4><span id="详细教程">详细教程</span></h4>
+<h4><span id="一-获得嵌入代码">一、获得嵌入代码</span></h4>
 <p>打开你所要添加的BiliBili视频，点击视频下的分享按键，选择嵌入代码</p>
 <p><img src="/2022/08/18/music-mv/p4.png" alt></p>
-<h5><span id="二-编辑md文件">二、编辑md文件</span></h5>
+<h4><span id="二-编辑md文件">二、编辑md文件</span></h4>
 <p>粘贴在你想要插入的md文档中，自行修改其大小（文中视频大小设置：width=“100%” height=“450”）</p>
-<h5><span id="三-自适应设置">三、自适应设置</span></h5>
+<h4><span id="三-自适应设置">三、自适应设置</span></h4>
 <p>想要自适应屏幕就套用上面带&lt; div &gt;标签的代码，把获得的src替换进去就ok，其他自行调整 O(∩_∩)O</p>
 <div style="position: relative; width: 100%; height: 500; padding-bottom: 60%;">
 <iframe src="//player.bilibili.com/player.html?aid=814597843&bvid=BV1sG4y1a7jj&cid=804352946&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe>
@@ -523,7 +523,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">Hexo博客怎么插入视频或者音频</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.1.</span> <span class="nav-text">Hexo插入本地视频</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.1.1.</span> <span class="nav-text">示例（自制智能桌面垃圾桶 ⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ ）</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.</span> <span class="nav-text">详细教程</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.2.1.</span> <span class="nav-text">一、新建md文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.2.2.</span> <span class="nav-text">二、添加视频文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.2.3.</span> <span class="nav-text">三、编辑md文档</span></a></li><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.2.4.</span> <span class="nav-text">四、编译上传</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.3.</span> <span class="nav-text">Hexo插入网上视频</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.3.1.</span> <span class="nav-text">示例BiliBili视频（还是自制智能桌面垃圾桶 ⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ ）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.3.2.</span> <span class="nav-text">详细教程</span></a></li><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.3.3.</span> <span class="nav-text">一、获得嵌入代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.3.4.</span> <span class="nav-text">二、编辑md文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.3.5.</span> <span class="nav-text">三、自适应设置</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">Hexo博客怎么插入视频或者音频</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.1.</span> <span class="nav-text">Hexo插入本地视频</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.1.1.</span> <span class="nav-text">示例（自制智能桌面垃圾桶 ⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ ）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.1.2.</span> <span class="nav-text">详细教程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.1.3.</span> <span class="nav-text">一、新建md文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.1.4.</span> <span class="nav-text">二、添加视频文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.1.5.</span> <span class="nav-text">三、编辑md文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.1.6.</span> <span class="nav-text">四、编译上传</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.2.</span> <span class="nav-text">Hexo插入网上视频</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.1.</span> <span class="nav-text">示例BiliBili视频（还是自制智能桌面垃圾桶 ⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ ）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.2.</span> <span class="nav-text">详细教程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.3.</span> <span class="nav-text">一、获得嵌入代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.4.</span> <span class="nav-text">二、编辑md文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.5.</span> <span class="nav-text">三、自适应设置</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
         </aside>
