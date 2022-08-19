@@ -38,73 +38,66 @@
 <main class="page-container">
 
     
-        $first-screen-font-size = 2rem;
-$first-screen-icon-size = 1.6rem;
-
-$temp-img = hexo-config('style.first_screen.background_img');
-$first-screen-img = $temp-img ? $temp-img:'/images/bg.svg';
-
-.first-screen-container {
-  position: relative;
-  box-sizing: border-box;
-  width: 100%;
-  overflow: hidden;
-  background: url($first-screen-img) center center / cover no-repeat;
-  background-position-y: $header-height;
-
-
-  +keep-tablet() {
-    background-position-y: $header-height * 0.9;
-  }
-
-  +keep-mobile() {
-    background-position-y: $header-height * 0.8;
-  }
-
-  .content {
-    position: relative;
-    box-sizing: border-box;
-    width: 80%;
-    height: 90%;
-
-    .description {
-      font-weight: bold;
-      font-size: $first-screen-font-size;
-      line-height: 1.8;
-      text-align: center;
-      color: var(--default-text-color);
-
-
-      +keep-tablet() {
-        font-size: $first-screen-font-size * 0.9;
-      }
-    }
-
-
-    .s-icon-list {
-      position: absolute;
-      bottom: 0;
-      font-size: $first-screen-icon-size;
-      text-align: center;
-
-      +keep-tablet() {
-        font-size: $first-screen-icon-size * 0.9;
-      }
-
-      .s-icon-item {
-        margin-right: 20px;
-        cursor: pointer;
-        line-height: 2;
-
-        &:last-child {
-          margin-right: 0;
-        }
-
-      }
-
-    }
-  }
-}
+        <div class="first-screen-container flex-center fade-in-down-animation">
+    <div class="content flex-center">
+        <div class="description">
+            Make a Little Progress Every Day.
+        </div>
+        
+            <div class="s-icon-list">
+                
+                    
+                        
+                            <span class="s-icon-item github">
+                                <a target="_blank" href="https://github.com/guan123772/guan123772.github.io# your GitHub URL">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </span>
+                        
+                    
+                
+                    
+                        
+                            <span class="s-icon-item weixin">
+                                <a target="_blank" href="/images/wechat.png">
+                                    <i class="fab fa-weixin"></i>
+                                </a>
+                            </span>
+                        
+                    
+                
+                    
+                        
+                            <span class="s-icon-item qq">
+                                <a target="_blank" href="/images/qq.png">
+                                    <i class="fab fa-qq"></i>
+                                </a>
+                            </span>
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                            <span class="s-icon-item email">
+                                <a href="mailto:mailto:2795672001@qq.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </span>
+                        
+                    
+                
+            </div>
+        
+    </div>
+</div>
 
     
 
@@ -239,14 +232,17 @@ $first-screen-img = $temp-img ? $temp-img:'/images/bg.svg';
 
                 <div class="home-article-content markdown-body">
                     
-                        Hexo博客怎么插入视频或者音频
+                        
+[TOC]
+
+Hexo博客怎么插入视频或者音频
 Hexo插入本地视频
 示例（自制智能桌面垃圾桶 ⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ ）
 PS：由于要访问Github仓库所以网络不好的话可能加载不出来
 
 
 
-以上视频的代码展示：（外边的这层div是控制自适应的框架大小，...
+以上视频的代码展示：（外边的这层div是控制自...
                     
                 </div>
 
