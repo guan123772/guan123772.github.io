@@ -185,12 +185,27 @@
     </span>
     
     
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Python%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A/">Python爬虫学习心得体会</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
 
     
     
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>665 Words</span>
+        </span>
+    
     
         <span class="article-min2read article-meta-item">
-            <i class="fas fa-clock"></i>&nbsp;<span>1 Mins</span>
+            <i class="fas fa-clock"></i>&nbsp;<span>2 Mins</span>
         </span>
     
     
@@ -206,7 +221,40 @@
         
 
         <div class="article-content markdown-body">
-            
+            <!--TOC-->
+<p>[TOC]</p>
+<!--TOC-->
+<h2><span id="爬虫学习心得体会">爬虫学习心得体会</span></h2>
+<h3><span id="什么是python爬虫">什么是Python爬虫？</span></h3>
+<p>Python爬虫简单来说就是：用python语言编写的代码来伪装成浏览器访问网络链接（url），然后用一些代码手段对浏览器抓包工具抓到的数据包进行数据分析，获取该链接中我们想要获取的数据，最后保存下来。</p>
+<h3><span id="什么是反爬">什么是反爬？</span></h3>
+<p>我们写的程序叫爬虫程序的话，那顾名思义“反爬”那就是阻止我们爬取数据的一种方法，也就是说我们写好的程序可以被远程服务器检测出我们是“爬虫请求”，并且拒绝我们的访问，达到保护自己数据的一种方法。</p>
+<h3><span id="什么是反反爬">什么是反反爬？</span></h3>
+<p>“反爬”是阻止我们爬取网站数据的一种方法，那么“反反爬”就是我们阻止他们阻止我们爬取数据的一种方法，哈哈，也就是说我们可以攻破他们的保护屏障从而进行我们的数据爬取</p>
+<h3><span id="怎么做到入门而不是入狱">怎么做到入门而不是入狱？</span></h3>
+<p><strong>主要的爬虫入狱小技巧：</strong></p>
+<p><strong>侵犯著作权</strong></p>
+<p><strong>侵犯商业秘密</strong></p>
+<p><strong>侵犯个人隐私或个人信息</strong></p>
+<p><strong>构成不正当竞争</strong></p>
+<p><strong>侵入计算机系统，构成刑事犯罪</strong></p>
+<p>总而言之，懂的都懂！！！</p>
+<h3><span id="编写爬虫程序的步骤是什么">编写爬虫程序的步骤是什么？</span></h3>
+<p>1.要爬取数据的网站url</p>
+<p>2.UA伪装</p>
+<p>3.参数修改</p>
+<p>4.持久化存储</p>
+<p>Tips（以爬取豆瓣为例）：</p>
+<p>1.首先呢，我们爬取数据肯定要去网站爬取，所以要有一个网站url，可以在抓包工具中找到我们需要的url。</p>
+<p><img src="/2022/09/06/python/p1.png" alt></p>
+<p>2.什么是UA伪装，UA=User-Agent，也就是用户设备，就是我们的访问设备，这里我们为了防止网站反爬，所以要进行伪装成浏览器访问，打开浏览器抓包工具,找到User-Agent即可。</p>
+<p><img src="/2022/09/06/python/p2.png" alt></p>
+<p>3.参数修改：所谓的参数就是一长串url的？后边的参数，我们要对其进行修改进而达到我们准确抓取信息的目的。主要参考抓包工具中的payload参数进行改写。</p>
+<p><img src="/2022/09/06/python/p3.png" alt></p>
+<p>4.持久化存储：上面三个步骤做完之后就可以进行具体网页的访问数据了，但是我们要存储下来还要进行下一步操作：利用requests第三方库给服务器发送请求获取数据，然后进行数据保存，爬虫完成。</p>
+<p><img src="/2022/09/06/python/p4.png" alt></p>
+<p><strong>本文作者</strong>：Guan<br><strong>本文地址</strong>： <a href="https://guan123772.github.io/2022/09/06/python/">https://guan123772.github.io/2022/09/06/python/</a> <br><strong>版权声明</strong>：转载请注明出处！</p>
+
         </div>
 
         
@@ -228,6 +276,14 @@
             </div>
         
 
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/Python%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A/">#Python爬虫学习心得体会</a>&nbsp;
+                    </li>
+                
+            </ul>
         
 
         
@@ -448,7 +504,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">爬虫学习心得体会</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.1.</span> <span class="nav-text">什么是Python爬虫？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.2.</span> <span class="nav-text">什么是反爬？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.3.</span> <span class="nav-text">什么是反反爬？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.4.</span> <span class="nav-text">怎么做到入门而不是入狱？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.5.</span> <span class="nav-text">编写爬虫程序的步骤是什么？</span></a></li></ol></li></ol>
     </div>
 </div>
         </aside>
